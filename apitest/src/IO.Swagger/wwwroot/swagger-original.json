@@ -1,0 +1,74 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Worth App Api",
+    "version" : "v1",
+    "title" : "API"
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/Worth-School/api/v1",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/api" : {
+      "get" : {
+        "description" : "server status",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "server status",
+            "schema" : {
+              "type" : "array",
+              "items" : { }
+            }
+          },
+          "400" : {
+            "description" : "Invalid request",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "message" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/user" : {
+      "get" : {
+        "description" : "User information",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "User information",
+            "schema" : {
+              "type" : "array",
+              "items" : { }
+            }
+          },
+          "400" : {
+            "description" : "Invalid request",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "message" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "inline_response_400" : {
+      "properties" : {
+        "message" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
